@@ -38,7 +38,7 @@ public class WatchListService {
 
     public WatchListResponse checkWatchListExists(@Valid NewWatchListRequest check) {
 
-        VideoType vt = new VideoType(check.getType().getId(), check.getType().getName());
+        VideoType vt = movieType;
 
         return watchListRepository.findByUserIdAndTypeAndVideoId(check.getUserId(), vt, check.getVideo())
                 .map(WatchListResponse::new)

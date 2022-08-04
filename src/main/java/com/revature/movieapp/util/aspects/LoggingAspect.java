@@ -22,6 +22,7 @@ public class LoggingAspect {
     public void startLog(JoinPoint jp) {
         String methodSig = extractMethodSignature(jp);
         String methodArgs = Arrays.toString(jp.getArgs());
+        String extraArgs = Arrays.toString(jp.getArgs());
         logger.info("{} invoked with the following arguments {}", methodSig, methodArgs);
     }
 

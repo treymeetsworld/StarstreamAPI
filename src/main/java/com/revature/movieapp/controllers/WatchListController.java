@@ -43,18 +43,6 @@ public class WatchListController {
 
     @PostMapping(value = "/movies", consumes = "application/json", produces = "application/json")
     public WatchListResponse addWatchList(@RequestBody NewWatchListRequest NWLR) {
-        /*
-        //example json
-        {
-            "video": 675353,
-            "userId": 1,
-            "type": {
-              "id": 1,
-              "name": "Movie"
-            },
-            "genre": [28, 12, 10751, 35]
-        }
-        */
         return watchListService.createNewMovieWatchList(NWLR);
     }
 

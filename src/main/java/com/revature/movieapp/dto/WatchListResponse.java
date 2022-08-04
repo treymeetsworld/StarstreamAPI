@@ -1,8 +1,6 @@
 package com.revature.movieapp.dto;
 
 import com.revature.movieapp.models.Genre;
-import com.revature.movieapp.models.Users;
-import com.revature.movieapp.models.VideoType;
 import com.revature.movieapp.models.WatchList;
 
 import java.util.List;
